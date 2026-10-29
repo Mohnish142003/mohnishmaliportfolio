@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>PROFILE</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">M.S Mali</p>
+
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#HOME" class="nav-link active-link">HOME</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#ABOUT" class="nav-link">ABOUT</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#PROJECTS" class="nav-link">PROJECTS</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#CONTACT" class="nav-link">CONTACT</a>
+                        <div class="circle"></div>
+                    </li>
+                    <div class="theme-button" id="theme-btn">
+                        <div class="themebox">
+                            <span class="dark-mode-toggle" id="toggle-switch">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    id="moon" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 .278a.577.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                                    <path
+                                        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    id="sun" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="nav-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-grid-fill" viewBox="0 0 16 16" onclick="myMenuFunction()">
+                    <path
+                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z" />
+                </svg>
+            </div>
+
+            <div class="nav-menu-btn">
+                <div id="nav-icon3" onclick="myMenuFunction()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                
+            </div>
+        </nav>
+
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="HOME">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>HELLO</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p> Focused in Computer Applications with a passion for creating visually stunning
+                            and user-friendly websites.
+                        </p>
+                    </div>
+                    <a href="https://www.linkedin.com/in/mohnish-mali">
+                        <div class="social_icons">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    style="margin-left:3px;" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-linkedin">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                         <img src="images/avatar.png" alt="avatar" srcset="">
+
+                    </div>
+                </div>
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="ABOUT">
+                <div class="top-header">
+                    <h1>ABOUT ME</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3 class="MyIntroduction">MY INTRODUCTION</h3>
+                            <p>Myself Mohnish Mali, I am Graduadtion completed in Bachelor of Computer
+                                Application(BCA).My techical Skills in HTML,CSS,JavaScript,React.js,PHP and MySQL.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>FRONTEND</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>BACKEND</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>PHP</span>
+                                <span>React.js</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>DATABASE</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+
+            <section class="section" id="PROJECTS">
+                <div class="top-header">
+                    <h1>PROJECTS AND CERTIFICATE</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box1">
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3 class="h3">CLASS ADMISSION SYSTEM</h3>
+                        <label class="h3">It is language used for HTML,CSS,PHP,MYSQL</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-users-alt"></i>
+                        <h3 class="h3">ZOMATO CLONE</h3>
+                        <label class="h3">It is Language used for HTML,CSS,JAVASCRIPT</label>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- -------------- CONTACT BOX ---------------- -->
+
+            <section class="section" id="CONTACT">
+                <div class="top-header">
+                    <h1>GET IN TOUCH</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>CONTACT ME
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-right-down" height="16"
+                                    style="margin: 11px 0 0 5px;position:absolute;">
+                                    <polyline points="10 15 15 20 20 15"></polyline>
+                                    <path d="M4 4h7a4 4 0 0 1 4 4v12"></path>
+                                </svg>
+                            </h2>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-mail">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <a href="Email" style="text-decoration: none;">mohnish142003@gmail.com</a>
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-phone">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <a href="Tel" style="text-decoration: none;"> +91 7083054648</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <h2>DOWNLOAD RESUME
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-corner-right-down" height="16"
+                                        style="margin: 11px 0 0 5px;position:absolute;">
+                                        <polyline points="10 15 15 20 20 15"></polyline>
+                                        <path d="M4 4h7a4 4 0 0 1 4 4v12"></path>
+                                    </svg>
+                                </h2>
+                                <a href="images/Mohnish Mali Resume.pdf">
+                                    <button class="btn">Download CV
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16"
+                                            fill="currentColor" class="bi bi-file-earmark-person-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755" />
+                                        </svg></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- --------------- FOOTER --------------- -->
+            <footer class="footer">
+                <div class="top-footer">
+                    <p>MOHNISH MALI</p>
+                </div>
+                <div class="middle-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list">
+                            <a href="#HOME">HOME</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#ABOUT">ABOUT</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#PROJECTS">PROJECTS</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#CONTACT">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://www.linkedin.com/in/mohnish-mali">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-left:3px;"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                </div>
+                </a>
+                <div class="bottom-footer">
+                    <p>Copyright &copy; <a href="#HOME">Mohnish</a> - All rights reserved</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    
+
+    <a href="#HOME" class="go-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+        <!-- <script src="Top.js"></script> -->
+        <script src="Javascript/Jquery.min.js"></script>
+        <script src="Javascript/Jquery.meanmenu.js"></script>
+        <script src="Javascript/owl.carousel.min.js"></script>
+        <script src="Javascript/main.js"></script>
+    </a>
+
+
+    <!-- ----- TYPING JS Link ----- -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="Javascript/main1.js"></script>
+
+</body>
+
+</html>

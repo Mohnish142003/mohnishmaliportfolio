@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 70%;
+    height: 117vh;
+    margin-top: 49px;
+  background: url("images/29.1.jpg")
+    no-repeat;
+  background-size: 100% 100%;
+  background-position: cover;
+}
+section:before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 58px;
+  width: 71%;
+  height: 51%;
+  background: url("images/501.png") no-repeat;
+  background-size: 100% 100%;
+  
+  background-position: center;
+  mix-blend-mode: screen;
+}
+section::after {
+  background-position: center;
+}
+    </style>
+</head>
+<body>
+    <section></section>
+</body>
+</html>
